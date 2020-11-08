@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.steve.jagodzinski'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: '6.10'
+    testCompile group: 'com.typesafe.akka', name: 'akka-testkit_2.12', version: '2.5.32'
+}
+
+test {
+    useTestNG()
+}
